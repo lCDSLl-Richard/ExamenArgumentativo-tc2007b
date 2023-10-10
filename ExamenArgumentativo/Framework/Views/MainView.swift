@@ -24,6 +24,12 @@ struct MainView: View {
       }
     }
     .frame(maxWidth: .infinity)
+    .onAppear {
+      Task {
+        print(await MovieRepository
+          .shared.getMovies()?.results)
+      }
+    }
   }
 }
 
