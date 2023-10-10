@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-let TOKEN = ""
+let TOKEN = ProcessInfo.processInfo.environment["API_TOKEN"] ?? ""
 
 protocol NetworkServiceProtocol {
   func setAuthToken(token: String)

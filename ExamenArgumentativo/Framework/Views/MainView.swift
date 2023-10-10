@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
+  @StateObject var viewModel = MainViewModel()
+  
   var body: some View {
     VStack(alignment: .leading) {
       Text("Movie DB")
@@ -15,25 +17,23 @@ struct MainView: View {
         .fontWeight(.bold)
         .padding(.horizontal)
       Spacer()
-      List {
-        MovieElementView()
-        MovieElementView()
-        MovieElementView()
-        MovieElementView()
-        MovieElementView()
+      List(viewModel.movies) { movie in
+        MovieElementView(
+          movieTitle: movie.original_title)
       }
     }
     .frame(maxWidth: .infinity)
     .onAppear {
       Task {
-        print(await MovieRepository
-          .shared.getMovies()?.results)
+        await viewModel.getMovies()
       }
     }
   }
 }
 
 struct MovieElementView: View {
+  let movieTitle: String
+  
   var body: some View {
     HStack {
       Image(systemName: "person")
@@ -42,7 +42,7 @@ struct MovieElementView: View {
         .padding()
         .frame(width: 100, height: 200)
       Spacer()
-      Text("Hey")
+      Text(movieTitle)
       Spacer()
     }
   }
