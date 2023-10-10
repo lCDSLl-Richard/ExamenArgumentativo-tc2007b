@@ -1,0 +1,8 @@
+# ExamenArgumentativo-tc2007b
+
+## Datos
+Ricardo Fernandez - A01704813
+iOS
+
+## API_KEY
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzZDQ4MWQ1N2Y4MTIxYzgzYzllZjRmMjA5NzhlZWQ4YyIsInN1YiI6IjY1MjU4NzE1ZmQ2MzAwMDBmZmNjZTg2OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.YbECP1w5uTY34UZ9EsNpv-RLysGZrKfkY7NbVza8zTk
