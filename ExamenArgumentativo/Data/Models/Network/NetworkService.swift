@@ -37,6 +37,7 @@ class NetworkService: NetworkServiceProtocol {
         return try decoder.decode(T.self, from: data)
       } catch {
         debugPrint("Decoding failed...")
+        debugPrint(error)
         return nil
       }
     case .failure(let error):
