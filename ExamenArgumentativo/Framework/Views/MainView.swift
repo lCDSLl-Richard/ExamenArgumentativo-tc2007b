@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct MainView: View {
   @StateObject var viewModel = MainViewModel()
@@ -18,8 +19,7 @@ struct MainView: View {
         .padding(.horizontal)
       Spacer()
       List(viewModel.movies) { movie in
-        MovieElementView(
-          movieTitle: movie.original_title)
+        MovieElementView(movie: movie)
       }
     }
     .frame(maxWidth: .infinity)
@@ -32,17 +32,22 @@ struct MainView: View {
 }
 
 struct MovieElementView: View {
-  let movieTitle: String
+  let movie: Movie
   
   var body: some View {
     HStack {
-      Image(systemName: "person")
+      WebImage(url: URL(string: movie.poster_path))
         .resizable()
-        .aspectRatio(contentMode: .fit)
+        .scaledToFit()
+        .frame(width: 100, height: 150)
         .padding()
-        .frame(width: 100, height: 200)
       Spacer()
-      Text(movieTitle)
+      VStack {
+        Text("\(movie.original_title)")
+          .font(.headline)
+          .padding(.bottom)
+        Text("\(movie.vote_average.formatted()) / 10")
+      }
       Spacer()
     }
   }

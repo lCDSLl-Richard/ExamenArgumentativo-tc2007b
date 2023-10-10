@@ -8,12 +8,12 @@
 import Foundation
 
 class MainViewModel: ObservableObject {
-  let repository = MovieRepository.shared
+  let useCase = GetMoviesUseCase.shared
   
   @Published var movies = [Movie]()
   
   @MainActor
   func getMovies() async {
-    movies = await repository.getMovies()!.results
+    movies = await useCase.getMovies()!.results
   }
 }
