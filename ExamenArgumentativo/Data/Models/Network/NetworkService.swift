@@ -11,7 +11,12 @@ import Alamofire
 let TOKEN = ProcessInfo.processInfo.environment["API_TOKEN"] ?? ""
 
 protocol NetworkServiceProtocol {
+  /// Sets the auth token of the Network Service
+  /// - Parameter token: the auth token to change
   func setAuthToken(token: String)
+  /// Performs a get request to the given URL
+  /// - Parameter url: the url to make the get request to
+  /// - Returns: An optional of the inferred type.
   func getRequest<T: Codable>(url: URL) async -> T?
 }
 

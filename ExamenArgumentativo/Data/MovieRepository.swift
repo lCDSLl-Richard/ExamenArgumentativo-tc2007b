@@ -15,6 +15,8 @@ class API {
 }
 
 protocol MovieRepositoryProtocol {
+  /// Fetches page one of the movies API
+  /// - Returns: the movie API Response containing the list of movies
   func getMovies() async -> MovieAPIResponse?
 }
 

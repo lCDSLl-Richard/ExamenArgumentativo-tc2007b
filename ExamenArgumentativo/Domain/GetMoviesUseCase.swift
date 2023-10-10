@@ -8,6 +8,8 @@
 import Foundation
 
 protocol GetMoviesUseCaseProtocol {
+  /// Uses the repository to fetch all movies and completes the path to the poster to make a valid URL
+  /// - Returns: A MovieAPI Response containing an array of Movies
   func getMovies() async -> MovieAPIResponse?
 }
 
