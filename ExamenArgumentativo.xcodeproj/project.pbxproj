@@ -15,6 +15,7 @@
 		6CB227872AD5C4460046012D /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227862AD5C4460046012D /* MovieRepository.swift */; };
 		6CB2278C2AD5C4E40046012D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2278B2AD5C4E40046012D /* NetworkService.swift */; };
 		6CB2278E2AD5C7550046012D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2278D2AD5C7550046012D /* Movie.swift */; };
+		6CB227912AD5C9D30046012D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227902AD5C9D30046012D /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6CB227862AD5C4460046012D /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 		6CB2278B2AD5C4E40046012D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6CB2278D2AD5C7550046012D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		6CB227902AD5C9D30046012D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		6CB227802AD5C0EB0046012D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				6CB2278F2AD5C9C80046012D /* ViewModels */,
 				6CB227812AD5C0F30046012D /* Views */,
 			);
 			path = Framework;
@@ -116,6 +119,14 @@
 				6CB2278B2AD5C4E40046012D /* NetworkService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		6CB2278F2AD5C9C80046012D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6CB227902AD5C9D30046012D /* MainViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				6CB2278C2AD5C4E40046012D /* NetworkService.swift in Sources */,
 				6CB227872AD5C4460046012D /* MovieRepository.swift in Sources */,
 				6CB2278E2AD5C7550046012D /* Movie.swift in Sources */,
+				6CB227912AD5C9D30046012D /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
