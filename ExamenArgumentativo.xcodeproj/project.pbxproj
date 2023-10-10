@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		6CB227732AD5BE6D0046012D /* ExamenArgumentativoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227722AD5BE6D0046012D /* ExamenArgumentativoApp.swift */; };
-		6CB227752AD5BE6D0046012D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227742AD5BE6D0046012D /* ContentView.swift */; };
+		6CB227752AD5BE6D0046012D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227742AD5BE6D0046012D /* MainView.swift */; };
 		6CB227772AD5BE6E0046012D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB227762AD5BE6E0046012D /* Assets.xcassets */; };
 		6CB2277A2AD5BE6E0046012D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB227792AD5BE6E0046012D /* Preview Assets.xcassets */; };
+		6CB227842AD5C3E20046012D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6CB227832AD5C3E20046012D /* Alamofire */; };
+		6CB227872AD5C4460046012D /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227862AD5C4460046012D /* MovieRepository.swift */; };
+		6CB2278C2AD5C4E40046012D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2278B2AD5C4E40046012D /* NetworkService.swift */; };
+		6CB2278E2AD5C7550046012D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2278D2AD5C7550046012D /* Movie.swift */; };
+		6CB227912AD5C9D30046012D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227902AD5C9D30046012D /* MainViewModel.swift */; };
+		6CB227952AD5CE5E0046012D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6CB227942AD5CE5E0046012D /* SDWebImageSwiftUI */; };
+		6CB227972AD5CE960046012D /* GetMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227962AD5CE960046012D /* GetMoviesUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6CB2276F2AD5BE6D0046012D /* ExamenArgumentativo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenArgumentativo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB227722AD5BE6D0046012D /* ExamenArgumentativoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenArgumentativoApp.swift; sourceTree = "<group>"; };
-		6CB227742AD5BE6D0046012D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6CB227742AD5BE6D0046012D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6CB227762AD5BE6E0046012D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CB227792AD5BE6E0046012D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6CB227862AD5C4460046012D /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		6CB2278B2AD5C4E40046012D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6CB2278D2AD5C7550046012D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		6CB227902AD5C9D30046012D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		6CB227962AD5CE960046012D /* GetMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoviesUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB227952AD5CE5E0046012D /* SDWebImageSwiftUI in Frameworks */,
+				6CB227842AD5C3E20046012D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				6CB227722AD5BE6D0046012D /* ExamenArgumentativoApp.swift */,
-				6CB227742AD5BE6D0046012D /* ContentView.swift */,
+				6CB227922AD5CE020046012D /* Domain */,
+				6CB227852AD5C4400046012D /* Data */,
+				6CB227802AD5C0EB0046012D /* Framework */,
 				6CB227762AD5BE6E0046012D /* Assets.xcassets */,
 				6CB227782AD5BE6E0046012D /* Preview Content */,
 			);
@@ -65,6 +81,65 @@
 				6CB227792AD5BE6E0046012D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6CB227802AD5C0EB0046012D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				6CB2278F2AD5C9C80046012D /* ViewModels */,
+				6CB227812AD5C0F30046012D /* Views */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		6CB227812AD5C0F30046012D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6CB227742AD5BE6D0046012D /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6CB227852AD5C4400046012D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6CB227882AD5C4BC0046012D /* Models */,
+				6CB227862AD5C4460046012D /* MovieRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6CB227882AD5C4BC0046012D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6CB2278A2AD5C4DE0046012D /* Network */,
+				6CB2278D2AD5C7550046012D /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6CB2278A2AD5C4DE0046012D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6CB2278B2AD5C4E40046012D /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6CB2278F2AD5C9C80046012D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6CB227902AD5C9D30046012D /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6CB227922AD5CE020046012D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6CB227962AD5CE960046012D /* GetMoviesUseCase.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +158,10 @@
 			dependencies = (
 			);
 			name = ExamenArgumentativo;
+			packageProductDependencies = (
+				6CB227832AD5C3E20046012D /* Alamofire */,
+				6CB227942AD5CE5E0046012D /* SDWebImageSwiftUI */,
+			);
 			productName = ExamenArgumentativo;
 			productReference = 6CB2276F2AD5BE6D0046012D /* ExamenArgumentativo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +190,10 @@
 				Base,
 			);
 			mainGroup = 6CB227662AD5BE6D0046012D;
+			packageReferences = (
+				6CB227822AD5C3E20046012D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6CB227932AD5CE5D0046012D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 6CB227702AD5BE6D0046012D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CB227752AD5BE6D0046012D /* ContentView.swift in Sources */,
+				6CB227752AD5BE6D0046012D /* MainView.swift in Sources */,
 				6CB227732AD5BE6D0046012D /* ExamenArgumentativoApp.swift in Sources */,
+				6CB2278C2AD5C4E40046012D /* NetworkService.swift in Sources */,
+				6CB227872AD5C4460046012D /* MovieRepository.swift in Sources */,
+				6CB227972AD5CE960046012D /* GetMoviesUseCase.swift in Sources */,
+				6CB2278E2AD5C7550046012D /* Movie.swift in Sources */,
+				6CB227912AD5C9D30046012D /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +368,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +398,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +434,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CB227822AD5C3E20046012D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+		6CB227932AD5CE5D0046012D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CB227832AD5C3E20046012D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CB227822AD5C3E20046012D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		6CB227942AD5CE5E0046012D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CB227932AD5CE5D0046012D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CB227672AD5BE6D0046012D /* Project object */;
 }
