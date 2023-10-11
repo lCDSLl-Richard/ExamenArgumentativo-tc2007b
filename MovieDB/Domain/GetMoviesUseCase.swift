@@ -28,4 +28,9 @@ class GetMoviesUseCase: GetMoviesUseCaseProtocol {
     
     return movies
   }
+  
+  func getGenre(id: Int) async -> Genre {
+    return await repository.getGenres()
+      .first(where: { $0.id == id }) ?? Genre(id: -1, name: "")
+  }
 }

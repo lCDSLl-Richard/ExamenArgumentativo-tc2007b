@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6CB227732AD5BE6D0046012D /* ExamenArgumentativoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227722AD5BE6D0046012D /* ExamenArgumentativoApp.swift */; };
+		6CB227732AD5BE6D0046012D /* MovieDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227722AD5BE6D0046012D /* MovieDBApp.swift */; };
 		6CB227752AD5BE6D0046012D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB227742AD5BE6D0046012D /* MainView.swift */; };
 		6CB227772AD5BE6E0046012D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB227762AD5BE6E0046012D /* Assets.xcassets */; };
 		6CB2277A2AD5BE6E0046012D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB227792AD5BE6E0046012D /* Preview Assets.xcassets */; };
@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6CB2276F2AD5BE6D0046012D /* ExamenArgumentativo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenArgumentativo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CB227722AD5BE6D0046012D /* ExamenArgumentativoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenArgumentativoApp.swift; sourceTree = "<group>"; };
+		6CB2276F2AD5BE6D0046012D /* MovieDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB227722AD5BE6D0046012D /* MovieDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBApp.swift; sourceTree = "<group>"; };
 		6CB227742AD5BE6D0046012D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6CB227762AD5BE6E0046012D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CB227792AD5BE6E0046012D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		6CB227662AD5BE6D0046012D = {
 			isa = PBXGroup;
 			children = (
-				6CB227712AD5BE6D0046012D /* ExamenArgumentativo */,
+				6CB227712AD5BE6D0046012D /* MovieDB */,
 				6CB227702AD5BE6D0046012D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,22 +57,22 @@
 		6CB227702AD5BE6D0046012D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CB2276F2AD5BE6D0046012D /* ExamenArgumentativo.app */,
+				6CB2276F2AD5BE6D0046012D /* MovieDB.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6CB227712AD5BE6D0046012D /* ExamenArgumentativo */ = {
+		6CB227712AD5BE6D0046012D /* MovieDB */ = {
 			isa = PBXGroup;
 			children = (
-				6CB227722AD5BE6D0046012D /* ExamenArgumentativoApp.swift */,
+				6CB227722AD5BE6D0046012D /* MovieDBApp.swift */,
 				6CB227922AD5CE020046012D /* Domain */,
 				6CB227852AD5C4400046012D /* Data */,
 				6CB227802AD5C0EB0046012D /* Framework */,
 				6CB227762AD5BE6E0046012D /* Assets.xcassets */,
 				6CB227782AD5BE6E0046012D /* Preview Content */,
 			);
-			path = ExamenArgumentativo;
+			path = MovieDB;
 			sourceTree = "<group>";
 		};
 		6CB227782AD5BE6E0046012D /* Preview Content */ = {
@@ -145,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6CB2276E2AD5BE6D0046012D /* ExamenArgumentativo */ = {
+		6CB2276E2AD5BE6D0046012D /* MovieDB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CB2277D2AD5BE6E0046012D /* Build configuration list for PBXNativeTarget "ExamenArgumentativo" */;
+			buildConfigurationList = 6CB2277D2AD5BE6E0046012D /* Build configuration list for PBXNativeTarget "MovieDB" */;
 			buildPhases = (
 				6CB2276B2AD5BE6D0046012D /* Sources */,
 				6CB2276C2AD5BE6D0046012D /* Frameworks */,
@@ -157,13 +157,13 @@
 			);
 			dependencies = (
 			);
-			name = ExamenArgumentativo;
+			name = MovieDB;
 			packageProductDependencies = (
 				6CB227832AD5C3E20046012D /* Alamofire */,
 				6CB227942AD5CE5E0046012D /* SDWebImageSwiftUI */,
 			);
-			productName = ExamenArgumentativo;
-			productReference = 6CB2276F2AD5BE6D0046012D /* ExamenArgumentativo.app */;
+			productName = MovieDB;
+			productReference = 6CB2276F2AD5BE6D0046012D /* MovieDB.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -181,7 +181,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6CB2276A2AD5BE6D0046012D /* Build configuration list for PBXProject "ExamenArgumentativo" */;
+			buildConfigurationList = 6CB2276A2AD5BE6D0046012D /* Build configuration list for PBXProject "MovieDB" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -198,7 +198,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6CB2276E2AD5BE6D0046012D /* ExamenArgumentativo */,
+				6CB2276E2AD5BE6D0046012D /* MovieDB */,
 			);
 		};
 /* End PBXProject section */
@@ -221,7 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CB227752AD5BE6D0046012D /* MainView.swift in Sources */,
-				6CB227732AD5BE6D0046012D /* ExamenArgumentativoApp.swift in Sources */,
+				6CB227732AD5BE6D0046012D /* MovieDBApp.swift in Sources */,
 				6CB2278C2AD5C4E40046012D /* NetworkService.swift in Sources */,
 				6CB227872AD5C4460046012D /* MovieRepository.swift in Sources */,
 				6CB227972AD5CE960046012D /* GetMoviesUseCase.swift in Sources */,
@@ -359,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ExamenArgumentativo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MovieDB/Preview Content\"";
 				DEVELOPMENT_TEAM = 3YA9576WH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -389,7 +389,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ExamenArgumentativo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MovieDB/Preview Content\"";
 				DEVELOPMENT_TEAM = 3YA9576WH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -415,7 +415,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6CB2276A2AD5BE6D0046012D /* Build configuration list for PBXProject "ExamenArgumentativo" */ = {
+		6CB2276A2AD5BE6D0046012D /* Build configuration list for PBXProject "MovieDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CB2277B2AD5BE6E0046012D /* Debug */,
@@ -424,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CB2277D2AD5BE6E0046012D /* Build configuration list for PBXNativeTarget "ExamenArgumentativo" */ = {
+		6CB2277D2AD5BE6E0046012D /* Build configuration list for PBXNativeTarget "MovieDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CB2277E2AD5BE6E0046012D /* Debug */,

@@ -1,5 +1,5 @@
 //
-//  ExamenArgumentativoApp.swift
+//  MovieDBApp.swift
 //  ExamenArgumentativo
 //
 //  Created by Ricardo Adolfo Fernández Alvarado on 10/10/23.
