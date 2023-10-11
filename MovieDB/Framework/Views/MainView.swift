@@ -13,18 +13,25 @@ struct MainView: View {
   
   var body: some View {
     NavigationStack {
-      VStack(alignment: .leading) {
-        List(viewModel.movies) { movie in
-          MovieElementView(movie: movie)
+      if viewModel.movies.isEmpty {
+        Text("No hay contenido para mostrar.")
+          .font(.largeTitle)
+          .fontWeight(.bold)
+          .multilineTextAlignment(.center)
+      } else {
+        VStack(alignment: .leading) {
+          List(viewModel.movies) { movie in
+            MovieElementView(movie: movie)
+          }
         }
+        .navigationTitle("Movie DB")
+        .navigationBarTitleDisplayMode(.automatic)
       }
-      .onAppear {
-        Task {
-          await viewModel.getMovies()
-        }
+    }
+    .onAppear {
+      Task {
+        await viewModel.getMovies()
       }
-      .navigationTitle("Movie DB")
-      .navigationBarTitleDisplayMode(.automatic)
     }
   }
 }

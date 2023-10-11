@@ -15,6 +15,6 @@ class MainViewModel: ObservableObject {
   /// Fetches the movies and stores them in the local property using the use case
   @MainActor
   func getMovies() async {
-    movies = await useCase.getMovies()!.results
+    movies = await useCase.getMovies()?.results ?? [Movie]()
   }
 }

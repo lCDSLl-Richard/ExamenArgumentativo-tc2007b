@@ -15,7 +15,11 @@ class MovieDetailViewModel: ObservableObject {
   @MainActor
   func getGenres(genreIds: [Int]) async {
     for id in genreIds {
-      genres.append(await useCase.getGenre(id: id).name)
+      let genre = await useCase.getGenre(id: id).name
+      
+      if !genre.isEmpty {
+        genres.append(genre)
+      }
     }
   }
 }

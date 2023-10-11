@@ -19,11 +19,11 @@ class GetMoviesUseCase: GetMoviesUseCaseProtocol {
   
   func getMovies() async -> MovieAPIResponse? {
     
-    var movies = await repository.getMovies()
+    guard var movies = await repository.getMovies() else { return nil }
     
-    for i in 0..<movies!.results.count {
-      movies!.results[i].poster_path =
-      "https://image.tmdb.org/t/p/original\(movies!.results[i].poster_path)"
+    for i in 0..<movies.results.count {
+      movies.results[i].poster_path =
+      "https://image.tmdb.org/t/p/original\(movies.results[i].poster_path)"
     }
     
     return movies
