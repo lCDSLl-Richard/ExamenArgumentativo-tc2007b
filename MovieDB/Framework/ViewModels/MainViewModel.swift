@@ -1,6 +1,6 @@
 //
 //  MainViewModel.swift
-//  ExamenArgumentativo
+//  MovieDB
 //
 //  Created by Ricardo Adolfo Fernández Alvarado on 10/10/23.
 //

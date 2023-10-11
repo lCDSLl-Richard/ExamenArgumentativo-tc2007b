@@ -1,6 +1,6 @@
 //
 //  MovieDBApp.swift
-//  ExamenArgumentativo
+//  MovieDB
 //
 //  Created by Ricardo Adolfo Fernández Alvarado on 10/10/23.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ExamenArgumentativoApp: App {
+struct MovieDBApp: App {
   var body: some Scene {
     WindowGroup {
       MainView()
